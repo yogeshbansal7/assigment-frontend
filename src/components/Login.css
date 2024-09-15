@@ -1,0 +1,130 @@
+/* Login Page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px; /* Adjust the max width to fit mobile screens */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Terms and Privacy Policy Text */
+.terms-text {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.terms-link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #666;
+}
+
+.login-input {
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%; /* Ensure input fields take full width on smaller screens */
+}
+
+/* Blue Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF; /* Blue color for login button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0069d9;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.social-icon:hover {
+  color: #333;
+}
+
+.fingerprint-icon {
+  font-size: 48px;
+  color: #666;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 1.5rem;
+    max-width: 90%; /* Ensures the login box takes a smaller width on mobile */
+  }
+
+  .login-input {
+    font-size: 14px; /* Reduce input font size for smaller screens */
+  }
+
+  .login-button {
+    font-size: 16px; /* Adjust the button font size for mobile */
+  }
+
+  .social-icon {
+    font-size: 20px; /* Slightly smaller icons for mobile */
+  }
+
+  .fingerprint-icon {
+    font-size: 40px; /* Reduce the fingerprint icon size on smaller screens */
+  }
+}

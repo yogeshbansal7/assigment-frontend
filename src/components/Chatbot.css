@@ -1,0 +1,27 @@
+/* Chatbot Page */
+.chatbot-container {
+    padding: 2rem;
+  }
+  
+  .fruit-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  
+  .fruit-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .fruit-name {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .fruit-description {
+    color: #777;
+  }
+  
