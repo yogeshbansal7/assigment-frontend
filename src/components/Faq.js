@@ -11,13 +11,13 @@ const Faq = () => {
   const [editId, setEditId] = useState(null); // State to handle which FAQ is being edited
 
   useEffect(() => {
-    axios.get('http://localhost:5000/faqs').then((res) => setFaqs(res.data));
+    axios.get('https://assignment-backend-e6qa.onrender.com/faqs').then((res) => setFaqs(res.data));
     console.log(faqs)
   }, []);
 
   const addFaq = () => {
     const newFaq = { question, answer };
-    axios.post('http://localhost:5000/faqs', newFaq).then((res) => {
+    axios.post('https://assignment-backend-e6qa.onrender.com/faqs', newFaq).then((res) => {
       setFaqs([...faqs, res.data]);
       setQuestion('');
       setAnswer('');
@@ -26,7 +26,7 @@ const Faq = () => {
 
   const updateFaq = () => {
     const updatedFaq = { question, answer };
-    axios.put(`http://localhost:5000/faqs/${editId}`, updatedFaq).then((res) => {
+    axios.put(`https://assignment-backend-e6qa.onrender.com/faqs/${editId}`, updatedFaq).then((res) => {
       setFaqs(faqs.map((faq) => (faq._id === editId ? res.data : faq)));
       setQuestion('');
       setAnswer('');
@@ -36,7 +36,7 @@ const Faq = () => {
 
   const deleteFaq = (id) => {
   console.log('Deleting FAQ with ID:', id); // Debugging line
-  axios.delete(`http://localhost:5000/faqs/${id}`).then(() => {
+  axios.delete(`https://assignment-backend-e6qa.onrender.com/faqs/${id}`).then(() => {
     setFaqs(faqs.filter((faq) => faq._id !== id));
   }).catch(err => {
     console.error('Error deleting FAQ:', err);
