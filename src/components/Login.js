@@ -9,7 +9,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (userId === 'admin' && password === 'admin') {
+    // if (userId === 'admin' && password === 'admin') {
+    if (userId && password) {
       navigate('/home');
     } else {
       alert('Invalid credentials');
