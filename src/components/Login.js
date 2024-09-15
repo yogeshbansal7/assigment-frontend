@@ -9,7 +9,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // if (userId === 'admin' && password === 'admin') {
     if (userId && password) {
       navigate('/home');
     } else {
@@ -29,7 +28,7 @@ const Login = () => {
         </p>
         
         <div className="input-container">
-          <FaEnvelope className="icon" /> {/* Email icon */}
+          <FaEnvelope className="icon" /> 
           <input
             className="login-input"
             type="text"
@@ -40,7 +39,7 @@ const Login = () => {
         </div>
 
         <div className="input-container">
-          <FaLock className="icon" /> {/* Password icon */}
+          <FaLock className="icon" />
           <input
             className="login-input"
             type="password"
@@ -50,7 +49,6 @@ const Login = () => {
           />
         </div>
 
-        {/* Blue Login Button */}
         <button className="login-button" onClick={handleLogin}>
           Login
         </button>
@@ -65,7 +63,7 @@ const Login = () => {
           </div>
         </div>
 
-        <FaFingerprint className="fingerprint-icon" /> {/* Fingerprint icon */}
+        <FaFingerprint className="fingerprint-icon" />
       </div>
     </div>
   );

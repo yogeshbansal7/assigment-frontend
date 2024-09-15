@@ -15,7 +15,6 @@ const Home = () => {
           Chat
         </Link>
         <Link to="/translator" className="grid-item translate">
-          {/* <img src="google_translate_icon_url" alt="Translate" /> */}
           Translator
         </Link>
         <Link to="/faq" className="grid-item faq">

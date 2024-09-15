@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="about-gradient">
-        {/* Placeholder for the image or logo at the top */}
         <div className="about-logo"></div>
       </div>
       <div className="about-card">

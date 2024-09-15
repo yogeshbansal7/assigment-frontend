@@ -8,7 +8,7 @@ const Faq = () => {
   const [faqs, setFaqs] = useState([]);
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
-  const [editId, setEditId] = useState(null); // State to handle which FAQ is being edited
+  const [editId, setEditId] = useState(null); 
 
   useEffect(() => {
     axios.get('https://assignment-backend-e6qa.onrender.com/faqs').then((res) => setFaqs(res.data));
@@ -35,7 +35,7 @@ const Faq = () => {
   };
 
   const deleteFaq = (id) => {
-  console.log('Deleting FAQ with ID:', id); // Debugging line
+  console.log('Deleting FAQ with ID:', id); 
   axios.delete(`https://assignment-backend-e6qa.onrender.com/faqs/${id}`).then(() => {
     setFaqs(faqs.filter((faq) => faq._id !== id));
   }).catch(err => {
